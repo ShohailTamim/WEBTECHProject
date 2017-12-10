@@ -47,6 +47,18 @@ foreach ($xml->user as $user)
 			</td>
 		</tr>
 		<tr>
+			<tr align="left" >
+			<td></td>
+			<td colspan="2">
+				<nav>
+					<button type="button" onclick="location.href='studentDashboard.php'">Home</button>
+					<button type="button" onclick="location.href='profile.php'">Profile</button>
+					<button type="button" onclick="location.href='uploadproject.php'">Upload Project</button>
+					<button type="button" onclick="location.href='topproject.php'">Top Project</button>
+					
+				</nav>
+			</td>
+		</tr>
 			<td valign="top" width="25%">
 				<span>Profile</span>
 				<hr width="150" align="left" size="4">
