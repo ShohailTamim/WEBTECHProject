@@ -74,7 +74,7 @@ if(isset($_POST['submit']))
 			<td valign="top" width="25%">
 				<span>Change Password</span>
 				<hr width="150" align="left" size="4">
-				<ul>
+				<ul><li type="square"><a href="studentDashboard.php">Home</a></li>
 					<li type="square"><a href="loggedin.php">Dashboard</a></li>
 					<li type="square"><a href="profile.php">View Profile</a></li>
 					<li type="square"><a href="changepp.php">Change Profile Picture</a></li>

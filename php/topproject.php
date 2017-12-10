@@ -47,15 +47,12 @@ foreach ($xml->user as $user)
 		</tr>
 		<tr>
 			<!-- Changes will apply here -->
-			<td valign="top" width="25%">
-				<span>Profile</span>
+							<td valign="top" width="25%">
+				<span>Upload Project</span>
 				<hr width="150" align="left" size="4">
 				<ul><li type="square"><a href="studentDashboard.php">Home</a></li>
-					<li type="square"><a href="loggedin.php">Dashboard</a></li>
-					<li type="square"><a href="profile.php">View Profile</a></li>
-					<li type="square"><a href="changepp.php">Change Profile Picture</a></li>
-					<li type="square"><a href="changepass.php">Change Password</a></li>
-					<li type="square"><a href="logout.php">Logout</a></li>
+					<li type="square"><a href="loggedin.php">Your All Projects</a></li>
+					<li type="square"><a href="profile.php">Upload a new Project</a></li>
 				</ul>
 			</td>
 			<td valign="top" height="350" align="center">
@@ -63,34 +60,58 @@ foreach ($xml->user as $user)
 					<tr>
 						<td>
 							<fieldset>
-								<legend><h3>PROFILE</h3></legend>
+							
 								<table>
 									<tr>
 										<td width="500">
-											<span>Name</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $name?>
+										
+											<h3> Project title:</h3> <!-- Changes will apply here <a> tag will apply here -->
+											<span>Rating</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
 											<hr>
-											<span>Email</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $email ?>
+											<span>upload date</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
 											<hr>
-											<span>Gender</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $gender ?>
+											<span>Position</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
 											<hr>
 								
-											<span>Date Of Birth  </span>&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $dob ?>
-											<hr>
 										</td>
-										<td width="300" align="center" valign="top">
-											<img src=<?php echo $image ?> alt="" width="150" height="200">
-											<br>
-											<a href="changepp.php">Change</a>
-										</td>
+										
+										
+
+										
 									</tr>
 									<tr>
-										<td colspan="2">
-											<hr>
-											<button onclick="document.location.href='../php/editProfile.php'">Edit profile</button>
+										
+											
 										</td>
 									</tr>
 								</table>
-							</fieldset>
+								
+								
+								<table>
+									<tr>
+										<td width="500">
+										
+											<h3> Project title:</h3> <!-- Changes will apply here <a> tag will apply here -->
+											<span>Rating</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
+											<hr>
+											<span>upload date</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
+											<hr>
+											<span>Position</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
+											<hr>
+								
+										</td>
+										
+										
+
+										
+									</tr>
+									<tr>
+										
+											
+										</td>
+									</tr>
+								</table>
+							
 						</td>
 					</tr>
 				</table>

@@ -1,5 +1,5 @@
 <?php
-
+$success="";
 session_start();
 if(!isset($_SESSION['username']))
 {		
@@ -31,9 +31,10 @@ foreach ($xml->user as $user)
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Profile</title>
+	<title>Edit Profile</title>
 </head>
 <body>
+<form method="post">
 	<table width="60%" border="1" align="center">
 		<tr align="right">
 			<td colspan="3" >
@@ -46,77 +47,62 @@ foreach ($xml->user as $user)
 			</td>
 		</tr>
 		<tr>
-			<!-- Changes will apply here -->
-							<td valign="top" width="25%">
-				<span>Upload Project</span>
+			<td valign="top" width="25%">
+				<span>Profile</span>
 				<hr width="150" align="left" size="4">
 				<ul>
-					<li type="square"><a href="loggedin.php">Your All Projects</a></li>
-					<li type="square"><a href="profile.php">Upload a new Project</a></li>
+					<li type="square"><a href="loggedin.php">Dashboard</a></li>
+					<li type="square"><a href="profile.php">View Profile</a></li>
+					<li type="square"><a href="changepp.php">Change Profile Picture</a></li>
+					<li type="square"><a href="changepass.php">Change Password</a></li>
+					<li type="square"><a href="logout.php">Logout</a></li>
 				</ul>
 			</td>
 			<td valign="top" height="350" align="center">
 				<table>
 					<tr>
+						<span><?php echo $success ?></span>
+					</tr>
+					<tr>
 						<td>
 							<fieldset>
-							
-								<table>
+								<legend><h3>UPLOAD PROJECT</h3></legend>
+								<table >
 									<tr>
 										<td width="500">
+											<span>Project Title</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<input type="text" name="projectTitle">
+											<hr>
+											<span>Description</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<input type="text" name="description">&nbsp
+											<hr>
 										
-											<h3> Project title goes here</h3> <!-- Changes will apply here <a> tag will apply here -->
-											<span>Rating</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
+											<span>YouTube Link</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<input type="text" name="youtubeLink">
+
+											
 											<hr>
-											<span>upload date</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
-											<hr>
-											<span>Position</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
-											<hr>
+											Upload Prject :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="file" name="propjectfile">
+
+											
 								
 										</td>
-										
-										
-
-										
 									</tr>
 									<tr>
+										<td colspan="2">
+											<hr>
 										
-											
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<input type="submit" value="Publish" name="submit">
+											 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="document.location.href='../php/home.php'">Cancel</button>
 										</td>
 									</tr>
 								</table>
-								
-								
-								<table>
-									<tr>
-										<td width="500">
-										
-											<h3> Project title goes here</h3> <!-- Changes will apply here <a> tag will apply here -->
-											<span>Rating</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
-											<hr>
-											<span>upload date</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: 
-											<hr>
-											<span>Position</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
-											<hr>
-								
-										</td>
-										
-										
-
-										
-									</tr>
-									<tr>
-										
-											
-										</td>
-									</tr>
-								</table>
-							
+							</fieldset>
 						</td>
 					</tr>
 				</table>
 			</td>
-			<!-- Changes will apply upto here -->
 		</tr>
 		<tr align="right">
 			<td colspan="3">
@@ -124,5 +110,6 @@ foreach ($xml->user as $user)
 			</td>
 		</tr>
 	</table>
+	</form>
 </body>
 </html>

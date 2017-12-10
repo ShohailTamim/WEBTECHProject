@@ -39,10 +39,11 @@ session_start();
 			<td></td>
 			<td colspan="2">
 				<nav>
-					<button type="button" onclick="location.href='http://www.stackoverflow.com'">Profile</button>
-					<button type="button" onclick="location.href='http://www.stackoverflow.com'">Upload Project</button>
-					<button type="button" onclick="location.href='http://www.stackoverflow.com'">Top Project</button>
-					<button type="button" onclick="location.href='http://www.stackoverflow.com'">About</button>
+					<button type="button" onclick="location.href='studentDashboard.php'">Home</button>
+					<button type="button" onclick="location.href='profile.php'">Profile</button>
+					<button type="button" onclick="location.href='uploadproject.php'">Upload Project</button>
+					<button type="button" onclick="location.href='topproject.php'">Top Project</button>
+					
 				</nav>
 			</td>
 		</tr>
@@ -51,6 +52,7 @@ session_start();
 				<span>Dashboard</span>
 				<hr width="150" align="left" size="4">
 				<ul>
+					<li type="square"><a href="studentDashboard.php">Home</a></li>
 					<li type="square"><a href="loggedin.php">Dashboard</a></li>
 					<li type="square"><a href="profile.php">View Profile</a></li>
 					<li type="square"><a href="changepp.php">Change Profile Picture</a></li>
