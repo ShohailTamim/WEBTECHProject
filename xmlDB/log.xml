@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logs>
+	
+	
+	
+	
+
+<user>
+	<name>tamim</name>
+	<LoginDate>2017-11-20 03:12</LoginDate>
+</user>
+<user>
+		<name>tamim</name>
+		<LoginDate>2017-11-20 03:11</LoginDate>
+	<LogoutDate>2017-11-20 03:12</LogoutDate>
+</user>
+<user>
+	<name>tamim</name>
+	<LoginDate>2017-11-20 03:13</LoginDate>
+</user>
+<user>
+		<name>tamim</name>
+		<LoginDate>2017-11-20 03:11</LoginDate>
+		<LogoutDate>2017-11-20 03:11</LogoutDate>
+	<LogoutDate>2017-11-20 03:13</LogoutDate>
+</user><user><name>tamim</name><LoginDate>2017-11-20 03:13</LoginDate></user><user>
+		<name>tamim</name>
+		<LoginDate>2017-11-20 03:11</LoginDate>
+	<LogoutDate>2017-11-20 03:13</LogoutDate></user><user><name>tamim</name><LoginDate>2017-11-20 03:15</LoginDate></user><user>
+		<name>tamim</name>
+		<LoginDate>2017-11-20 03:05</LoginDate>
+		<LogoutDate>2017-11-20 03:11</LogoutDate>
+		<LogoutDate>2017-11-20 03:11</LogoutDate>
+		<LogoutDate>2017-11-20 03:12</LogoutDate>
+<LogoutDate>2017-11-20 03:15</LogoutDate></user></logs>
