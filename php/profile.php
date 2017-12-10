@@ -46,6 +46,7 @@ foreach ($xml->user as $user)
 			</td>
 		</tr>
 		<tr>
+			<!-- Changes will apply here -->
 			<td valign="top" width="25%">
 				<span>Profile</span>
 				<hr width="150" align="left" size="4">
@@ -94,6 +95,7 @@ foreach ($xml->user as $user)
 					</tr>
 				</table>
 			</td>
+			<!-- Changes will apply upto here -->
 		</tr>
 		<tr align="right">
 			<td colspan="3">

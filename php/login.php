@@ -51,7 +51,7 @@ if(isset($_POST['login']))
 
 				
 				//end of login history
-				header('location: loggedin.php');
+				header('location: studentDashboard.php');
 
 				exit();
 			}
