@@ -1,0 +1,73 @@
+<!-- Have to apply PHP part -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Home</title>
+</head>
+<body>
+	<table border="1" align="center" width="90%" height="100%" cellspacing="0" bgcolor="#0F1F3A">
+		<tr align="left">
+			<td colspan="2">
+				
+				<input type="image" name="logo" src="img/CRS.jpg" width="25%" height="25%">
+
+					<nav align="center">
+
+						<button type="button" onclick="location.href='S_home.html'"><font color="red" size="4em" /><b/>Home</button>
+						<button type="button" onclick="location.href='S_profile.html'"><font color="red" size="4em" /><b/>Profile</button>
+						<button type="button" onclick="location.href='S_job_offer.html'"><font color="red" size="4em" /><b/>Job Offers</button><!-- Changes will apply here -->
+						<button type="button" onclick="location.href='login.html'"><font color="red" size="4em" /><b/>Log Out</button><!-- Changes will apply here -->
+					
+					</nav>
+			</td>
+		</tr>
+			<!-- Changes will apply here -->
+<tr align="left" >
+			
+			<td colspan="2">
+				<nav>
+					<button type="button" onclick="location.href='S_home.html'">Home</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='S_profile.html'">Profile</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='S_job_offer.html'">Job Offers</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='login.html'">Log Out</button>
+					
+				</nav>
+			</td>
+		</tr>
+			
+			<td >
+				<table>
+					
+						<td>
+							<fieldset>
+								
+								<table>
+									<tr>
+										<td width="800" height="200"   >
+											Active offers: <a href="loggedin.php"></a></br></br><!-- Changes will apply here -->
+											
+											<hr>
+											<button onclick="document.location.href='../php/editProfile.php'">Send request</button><!-- Changes will apply here,buttons are not functional -->
+											<button onclick="document.location.href='../php/editProfile.php'">Remove</button><!-- Changes will apply here, buttons are not functional -->
+										</td>
+										
+									</tr>
+									
+									
+								</table>
+							</fieldset>
+						</td>
+					
+				</table>
+			</td>
+			
+		</tr>
+		<tr align="right">
+			<td colspan="3">
+				<iframe src="../frame/tempFrame2.html" align="center" width="100%" height="30%" frameborder="0" scrolling="no"></iframe>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

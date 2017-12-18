@@ -1,0 +1,69 @@
+<!-- Have to apply PHP part -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Home</title>
+</head>
+<body>
+	<table width="60%" border="1" align="center">
+		<tr align="right">
+			<td colspan="3" >
+				<iframe src="../frame/tempFrame1.html" align="center" width="100%" height="60%" frameborder="0" scrolling="no" ></iframe>
+
+				<span >
+					Logged in as <a href="loggedin.php"><?php echo $_SESSION['username'] ?></a>
+					
+				</span> 
+			</td>
+		</tr>
+		<tr>
+			<!-- Changes will apply here -->
+<tr align="left" >
+			
+			<td colspan="2">
+				<nav>
+					<button type="button" onclick="location.href='S_home.html'">Home</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='S_profile.html'">Profile</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='S_job_offer.html'">Job Offers</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='login.html'">Log Out</button>
+					
+				</nav>
+			</td>
+		</tr>
+			
+			<td >
+				<table>
+					
+						<td>
+							<fieldset>
+								
+								<table>
+									<tr>
+										<td width="800" height="200"   >
+											Sent offers: <a href="loggedin.php"></a></br></br><!-- Changes will apply here -->
+											
+											<hr>
+											<button onclick="document.location.href='../php/editProfile.php'">Cancel request</button><!-- Changes will apply here -->
+											<button onclick="document.location.href='../php/editProfile.php'">Hide</button><!-- Changes will apply here -->
+										</td>
+										
+									</tr>
+									
+									
+								</table>
+							</fieldset>
+						</td>
+					
+				</table>
+			</td>
+			
+		</tr>
+		<tr align="right">
+			<td colspan="3">
+				<iframe src="../frame/tempFrame2.html" align="center" width="100%" height="30%" frameborder="0" scrolling="no"></iframe>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

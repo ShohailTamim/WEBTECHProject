@@ -1,0 +1,78 @@
+<!-- Have to apply PHP part -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Home</title>
+</head>
+<body>
+	<table border="1" align="center" width="90%" height="100%" cellspacing="0" bgcolor="#0F1F3A">
+		<tr>
+				<td>
+				
+					<input type="image" name="logo" src="img/CRS.jpg" width="25%" height="25%">
+				<nav align="right">
+					<button type="button" onclick="location.href='S_home.html'">Home</button>
+					<button type="button" onclick="location.href='S_profile.html'">Profile</button>
+					<button type="button" onclick="location.href='S_job_offer.html'">Job Offers</button><!-- Changes will apply here -->
+					<button type="button" onclick="location.href='login.html'">Log Out</button><!-- Changes will apply here -->
+					
+				</nav>
+				</td>
+			</tr>
+		<tr>
+			<!-- Changes will apply here -->
+			
+			<td>
+				<table align="right">
+					
+						<td>
+							<fieldset>
+								
+								<table>
+									<tr align="center-left">
+										<td width="200">
+											<font color="white">Welcome<a href="loggedin.php"><?php echo $_SESSION['username'] ?></a></font>
+										</td>
+										
+										<tr align="center-left">
+										<td width="800"  height="800px">
+											<font color="white">Status:<a href="loggedin.php"><?php echo $_SESSION['username'] ?></a></font>
+										</td>
+										</tr>
+										
+										<tr align="center-left">
+										<td width="800" height="100"  >
+											<font color="white">Expert In: <a href="loggedin.php"><?php echo $_SESSION['username'] ?></a></font>
+										</td>
+										</tr>
+										
+										
+										<td width="300" align="right" valign="top">
+											<img src=<?php echo $image ?> alt="" width="150" height="200">
+											<br>
+											
+										</td>
+									</tr>
+									
+								</table>
+							</fieldset>
+						</td>
+					
+				</table>
+			</td>
+			
+		</tr>
+		<tr align="right">
+				<td>
+					<h5 align="center">
+						<font color="white">
+							<input type="search" id="mySearch" name="mysearch">
+    						<button>Search</button>
+    					</font>
+					</h5>
+				</td>
+			</tr>
+	</table>
+</body>
+</html>

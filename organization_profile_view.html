@@ -1,0 +1,105 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Logged In</title>
+</head>
+<body width="1200">
+<form method="post" action="uploadpp.php">
+	<table width="60%" border="1" align="center">
+		<tr align="right">
+			<td colspan="3" >
+			<input type="image" name="logo" src="img/CRS.jpg" width="25%" height="25%">
+				<!--<iframe src="../frame/tempFrame1.html" align="center" width="100%" height="60%" frameborder="0" scrolling="no" ></iframe>
+-->
+				<span >
+					Logged in as <a href="loggedin.php"><?php echo $_SESSION['username'] ?></a>
+					&nbsp&nbsp | &nbsp&nbsp	<a href="logout.php">Logout</a>
+				</span> 
+			</td>
+		</tr>
+		<tr align="left" >
+			<td></td>
+			<td colspan="2">
+			
+				<nav>
+					<button type="button" onclick="location.href='http://www.stackoverflow.com'">Home</button>
+					<button type="button" onclick="location.href='http://www.stackoverflow.com'">Profile</button>
+					<button type="button" onclick="location.href='http://www.stackoverflow.com'">Notification</button>
+					<button type="button" onclick="location.href='http://www.stackoverflow.com'">About</button>
+				</nav>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="25%">
+				
+				<!--
+				<span>Dashboard</span>
+				
+				<hr width="150" align="left" size="4">
+				--> 
+				
+				
+				<ul>
+					<span><a href="profile.php">Post a Job</a></span>
+					
+					<hr width="150" align="left" size="4">
+					
+					<span><a href="profile.php">Search Employee</a></span>
+					<hr width="150" align="left" size="4">
+					<span><a href="profile.php">Security</a></span>
+					<hr width="150" align="left" size="4">
+					<span><a href="profile.php">Delete account</a></span>
+					<hr width="150" align="left" size="4">
+					
+					
+					
+					<!--<li type="square"><a href="logout.php">Delete Account</a></li>-->
+				</ul>
+			</td>
+			<td valign="top" height="350" align="center">
+			<table>
+				<tr>
+					<td>
+					<!--
+						<fieldset>
+							
+							
+							<table border="1" style="overflow-y: scroll;">
+								<tr>
+									<th width="200px">Login Date Time</th>
+									<th width="200px">Logout Date Time</th>
+								</tr>
+								<fieldset> gfg </fieldset>
+								
+								<?php /* foreach ($xml->user as $user) : if($_SESSION['name']==$user->name){?>    //cmmnt oot
+							    <tr>
+							      <td><?php echo $user->LoginDate; ?></td>
+							      <td><?php echo $user->LogoutDate; ?></td>
+							    </tr>
+								<?php } endforeach; */ ?> //cmmnt out 
+							
+							
+							</table>
+						</fieldset>
+						
+						-->
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+			
+		</tr>
+		<tr align="right">
+			<td colspan="3">
+				<iframe src="../frame/tempFrame2.html" align="center" width="100%" height="30%" frameborder="0" scrolling="no"></iframe>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
