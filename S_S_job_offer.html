@@ -6,32 +6,43 @@
 	<title>Student Home</title>
 </head>
 <body>
-	<table width="60%" border="1" align="center">
-		<tr align="right">
-			<td colspan="3" >
-				<iframe src="../frame/tempFrame1.html" align="center" width="100%" height="60%" frameborder="0" scrolling="no" ></iframe>
-
-				<span >
-					Logged in as <a href="loggedin.php"><?php echo $_SESSION['username'] ?></a>
-					
-				</span> 
-			</td>
-		</tr>
-		<tr>
-			<!-- Changes will apply here -->
-<tr align="left" >
-			
+	<table border="1" align="center" width="90%" height="100%" cellspacing="0" bgcolor="#0F1F3A">
+		<tr align="left">
 			<td colspan="2">
-				<nav>
-					<button type="button" onclick="location.href='S_home.html'">Home</button><!-- Changes will apply here -->
-					<button type="button" onclick="location.href='S_profile.html'">Profile</button><!-- Changes will apply here -->
-					<button type="button" onclick="location.href='S_job_offer.html'">Job Offers</button><!-- Changes will apply here -->
-					<button type="button" onclick="location.href='login.html'">Log Out</button>
+				
+				<input type="image" name="logo" src="img/CRS.jpg" width="25%" height="25%">
+
+					<nav align="center">
+
+						<button type="button" onclick="location.href='S_home.html'"><font color="red" size="4em" /><b/>Home</button>
+						<button type="button" onclick="location.href='S_profile.html'"><font color="red" size="4em" /><b/>Profile</button>
+						<button type="button" onclick="location.href='S_job_offer.html'"><font color="red" size="4em" /><b/>Job Offers</button><!-- Changes will apply here -->
+						<button type="button" onclick="location.href='homepage.html'"><font color="red" size="4em" /><b/>Log Out</button><!-- Changes will apply here -->
 					
-				</nav>
+					</nav>
 			</td>
 		</tr>
-			
+			<!-- Changes will apply here -->
+			<td valign="top" width="25%">
+				<fieldset>
+					<legend>
+				<font size="5em" color="#F78541">
+					
+				<b/>Active Offers
+				</font></legend>
+				<br><br>
+				<ul>
+						<li type="square">
+						<a href="S_A_job_offer.html"><font color="teal" size="4em" />Active Offers</a>
+					</li>
+					<hr>
+					
+					<li type="square"><a href="profile.php"><font color="teal" size="4em" />Sent Offers</a></li><hr>
+					<br><br><br><br><br><br><br><br><br><br>
+					
+				</ul>
+			</fieldset>
+			</td>
 			<td >
 				<table>
 					
@@ -41,8 +52,7 @@
 								<table>
 									<tr>
 										<td width="800" height="200"   >
-											Sent offers: <a href="loggedin.php"></a></br></br><!-- Changes will apply here -->
-											
+											<font color="teal" size="4em" />Sent Offers: <a href="loggedin.php"></a></br></br><!-- Changes will apply here -->
 											<hr>
 											<button onclick="document.location.href='../php/editProfile.php'">Cancel request</button><!-- Changes will apply here -->
 											<button onclick="document.location.href='../php/editProfile.php'">Hide</button><!-- Changes will apply here -->
@@ -60,10 +70,15 @@
 			
 		</tr>
 		<tr align="right">
-			<td colspan="3">
-				<iframe src="../frame/tempFrame2.html" align="center" width="100%" height="30%" frameborder="0" scrolling="no"></iframe>
-			</td>
-		</tr>
+				<td colspan="2">
+					<h5 align="center">
+						<font color="white">
+							<input type="search" id="mySearch" name="mysearch">
+    						<button>Search</button>
+    					</font>
+					</h5>
+				</td>
+			</tr>
 	</table>
 </body>
 </html>

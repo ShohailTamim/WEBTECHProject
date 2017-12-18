@@ -10,7 +10,7 @@
 <body>
 	<table border="1" align="center" width="90%" height="100%" cellspacing="0" bgcolor="#0F1F3A">
 		<tr align="left">
-			<td colspan="3" >
+			<td colspan="2">
 				
 				<input type="image" name="logo" src="img/CRS.jpg" width="25%" height="25%">
 
@@ -19,7 +19,7 @@
 						<button type="button" onclick="location.href='S_home.html'"><font color="red" size="4em" /><b/>Home</button>
 						<button type="button" onclick="location.href='S_profile.html'"><font color="red" size="4em" /><b/>Profile</button>
 						<button type="button" onclick="location.href='S_job_offer.html'"><font color="red" size="4em" /><b/>Job Offers</button><!-- Changes will apply here -->
-						<button type="button" onclick="location.href='login.html'"><font color="red" size="4em" /><b/>Log Out</button><!-- Changes will apply here -->
+						<button type="button" onclick="location.href='homepage.html'"><font color="red" size="4em" /><b/>Log Out</button><!-- Changes will apply here -->
 					
 					</nav>
 			</td>
@@ -39,15 +39,26 @@
 			</td>
 		</tr>-->
 			<td valign="top" width="25%">
-				<span>Profile</span>
-				<hr width="150" align="left" size="4">
-				<ul><li type="square"><a href="studentDashboard.php">Edit Profile</a></li><hr>
+				<fieldset>
+					<legend>
+				<font size="5em" color="#F78541">
 					
-					<li type="square"><a href="profile.php">View Profile</a></li><hr>
-					<li type="square"><a href="changepp.php">Change Profile Picture</a></li><hr>
-					<li type="square"><a href="changepass.php">Change Password</a></li><hr>
-					<li type="square"><a href="logout.php">Logout</a></li><hr>
+				<b/>PROFILE
+				</font></legend>
+				<br><br>
+				<ul>
+						<li type="square">
+						<a href="studentDashboard.php"><font color="teal" size="4em" />Edit Profile</a>
+					</li>
+					<hr>
+					
+					<li type="square"><a href="profile.php"><font color="teal" size="4em" />View Profile</a></li><hr>
+					<li type="square"><a href="changepp.php"><font color="teal" size="4em" />Change Profile Picture</a></li><hr>
+					<li type="square"><a href="changepass.php"><font color="teal" size="4em" />Change Password</a></li><hr>
+					<br><br>
+					
 				</ul>
+			</fieldset>
 			</td>
 			<td valign="top" height="350" align="center">
 				<table>
@@ -96,13 +107,23 @@
 											<hr>
 											<br><br>
 											
-											<span><font color="white" size="3em" />Expertise</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
+											<span><font color="white" size="3em" />Expertise</span>
+											<br><br><br>
+											<form action="" method="get">
+											  <input type="checkbox" name="HTML" value="HTML">
+											  <font color="red" size="3em"/>HTML
+											  <input type="checkbox" name="C/C++" value="C/C++">
+											  <font color="#468A78" size="3em"/>C/C++
+											  <input type="checkbox" name="JAVASCRIPT" value="JAVASCRIPT">
+											  <font color="#FFC300  " size="3em"/>JAVASCRIPT
+											  <input type="checkbox" name="AJAX" value="AJAX">
+											  <font color="#FF5733  " size="3em"/>AJAX
+											  <input type="checkbox" name="PHP" value="PHP">
+											  <font color="#900C3F" size="3em"/>PHP
+											  <br><br>
+											  <input type="submit" value="Submit">
+											</form>
 
-											<button><font color="red" size="3em"/>HTML</button>
-											<button><font color="#468A78" size="3em"/>C/C++</button>
-											<button><font color="#FFC300  " size="3em"/>JAVASCRIPT</button>
-											<button><font color="#FF5733  " size="3em"/>AJAX</button>
-											<button><font color="#900C3F" size="3em"/>PHP</button>
 
 
 
@@ -122,10 +143,9 @@
 					</tr>
 				</table>
 			</td>
-			
 		</tr>
 		<tr align="right">
-				<td>
+				<td colspan="2">
 					<h5 align="center">
 						<font color="white">
 							<input type="search" id="mySearch" name="mysearch">
@@ -133,7 +153,7 @@
     					</font>
 					</h5>
 				</td>
-		</tr>
+			</tr>
 	</table>
 </body>
 </html>
