@@ -1,0 +1,327 @@
+
+<!-- Have to apply PHP part -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Profile</title>
+</head>
+<body>
+	<table border="1" align="center" width="90%" height="100%" cellspacing="0" bgcolor="#0F1F3A">
+		<tr align="left">
+			<td colspan="2">
+				
+				<input type="image" name="logo" src="img/CRS.jpg" width="25%" height="25%">
+
+					<nav align="right">
+
+						<button type="button" onclick="location.href='org_home_view.html'"><font color="red" size="4em" /><b/>Home</button>
+						<button type="button" onclick="location.href='org_profile_view.html'"><font color="red" size="4em" /><b/>Profile</button>
+						<button type="button" onclick="location.href='student_notification_view.html'"><font color="red" size="4em" /><b/>Notification</button><!-- Changes will apply here -->
+						<button type="button" onclick="location.href='homepage.html'"><font color="red" size="4em" /><b/>Log Out</button>
+					</nav>
+			</td>
+		</tr>
+		<tr>
+			
+			<td valign="top" width="25%">
+				<fieldset>
+					<legend>
+				<font size="6em" color="#F78541">
+					
+				<b/><span>Edit Profile</span>
+				</font></legend>
+				<br><br>
+				<ul>
+				    <span><a href="student_editProfile_view.html" style="text-decoration:none"><font color="teal" size="5em" />Edit Profile </a></span>
+					<hr width="150" align="left" size="5">
+					<span><a href="student_security_view.html"style="text-decoration:none"><font color="teal" size="5em" />Security</a></span>
+					<hr width="150" align="left" size="5">
+					<span><a href="student_jobOffers_view.html"style="text-decoration:none"><font color="teal" size="5em" />Job Offers</a></span>
+					<hr width="150" align="left" size="5">
+					<span><a href="homepage.html"style="text-decoration:none"><font color="teal" size="5em" />Delete account</a></span>
+					<hr width="150" align="left" size="5">
+				</ul>
+			</fieldset>
+			</td>
+			<td valign="top" height="350" align="center">
+				<table>
+					<tr>
+						<td>
+							<fieldset>
+					<legend>
+						<h2><font color="teal"/>
+							EDIT PROFILE
+						</h2>
+					</legend>
+
+
+								<form>
+								<table>
+									<tr>
+										<td width="500">
+											<br>	
+ 											<button><font color="red" size="4em" />BASIC INFO</button>
+ 											<br>
+ 											<br>	
+
+											<span><font color="white" size="3em" />Name</span>&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_name?>
+											<input type="text" name="s_name" value="">
+											<br>
+											
+
+											
+
+											<br>
+											<span><font color="white" size="3em" />Father's Name</span>&nbsp&nbsp&nbsp&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_father_name?>
+											<input type="text" name="s_father_name" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" />Mother's Name</span>&nbsp&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_mother_name?>
+											<input type="text" name="s_mother_name" value="">
+											<br>
+											
+
+											<br>
+											<span><font color="white" size="3em" />Date of Birth</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_dob?>
+											<input type="text" name="s_dob" value="">
+											<br>
+											
+											
+											<br>
+											<span><font color="white" size="3em" />Gender</span>&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_gender ?>
+												<select>
+
+											  		<font color="#F78541" /><option name="s_gender" value="male">Male</option>
+											  		<font color="#F78541" /><option name="s_gender" value="female">Female</option>
+											  		<font color="#F78541" /><option name="s_gender" value="others">Others</option>
+												</select>
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Email</span>&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_email?>
+											<input type="text" name="s_email" value="">
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Parmanent Address</span>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_parmanent_address?>
+											<input type="text" name="s_parmanent_address" value="">
+											<br>
+											
+											
+
+
+											<br>
+											<span><font color="white" size="3em" />Present Address </span>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_present_address?>
+											<input type="text" name="s_present_address" value="">
+											<br>
+											
+
+											
+
+											<br>
+											<span><font color="white" size="3em" />Nationality&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $nationality?>
+											<input type="text" name="nationality" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" /> Maritial Status </span>&nbsp
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $s_maritial_status?>																											
+											<input type="text" name="s_maritial_status" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" />Religion</span>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo  $s_religion?>																											
+											<input type="text" name="s_religion" value="">
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Mobile No:
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $s_mobile_no?>
+											<input type="text" name="s_mobile_no" value="">
+											<br>
+											<br>
+
+
+
+
+											<br>	
+ 											<button><font color="red" size="4em" />EDUCATIONAL INFO</button>
+ 											<br><br>	
+
+ 											<br>
+											<span><font color="white" size="3em" />Degree</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_degree_1?>
+											<input type="text" name="student_degree_1" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" />Institute/University</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_institute_1?>
+											<input type="text" name="student_institute_1" value="">
+											
+
+                                           
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Year Of Passing</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $name?>
+											<input type="text" name="student_year_of_pass1" value="">
+											<br>
+
+											
+
+
+											<br>
+											<span><font color="white" size="3em" />Grade</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_grade_1?>
+											<input type="text" name="student_grade_1" value="">
+											<br>
+										
+ 											<br>
+											<span><font color="white" size="3em" />Degree</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_degree_2?>
+											<input type="text" name="student_degree_2" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" />Institute/University</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_institute_2?>
+											<input type="text" name="student_institute_2" value="">
+											
+
+                                           
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Year Of Passing</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $student_year_of_pass2?>
+											<input type="text" name="student_year_of_pass2" value="">
+											<br>
+
+											
+
+
+											<br>
+											<span><font color="white" size="3em" />Grade :</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_grade_2?>
+											<input type="text" name="student_grade_2" value="">
+											<br>
+
+											
+											
+ 											<br>
+											<span><font color="white" size="3em" />Degree</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_degree_3?>
+											<input type="text" name="student_degree_3" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" />Institute/University</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_institute_3?>
+											<input type="text" name="student_institute_3" value="">
+											
+
+                                           
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Year Of Passing</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_year_of_pass3?>
+											<input type="text" name="student_year_of_pass3" value="">
+											<br>
+
+											
+
+											<br>
+											<span><font color="white" size="3em" />Grade :</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_grade_3?>
+											<input type="text" name="student_grade_3" value="">
+											
+											<br>	
+
+ 											<br>
+											<span><font color="white" size="3em" />Degree</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_degree_4?>
+											<input type="text" name="student_degree_4" value="">
+											<br>
+											<br>
+											<span><font color="white" size="3em" />Institute/University</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_institute_4?>
+											<input type="text" name="student_institute_4" value="">
+											
+
+                                           
+											<br>
+
+											<br>
+											<span><font color="white" size="3em" />Year Of Passing</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $student_year_of_pass4?>
+											<input type="text" name="student_year_of_pass4" value="">
+											<br>
+
+										
+
+											
+
+
+											<br>
+											<span><font color="white" size="3em" />Grade :</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<?php echo $student_grade_4?>
+											<input type="text" name="student_grade_4" value="">
+											<br>
+
+											<br><br>	
+ 											<button><font color="red" size="4em" />SKILLS</button>
+ 											<br><br>
+ 											<input type="text" name="student_skills" value="">
+
+
+											<br><br>	
+ 											<button><font color="red" size="4em" />EXPERIENCES</button>
+ 											<br><br>
+											<input type="text" name="student_experiences" value="">	
+											
+											<br><br>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<input type="reset" name="reset" value="Reset">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+											<input type="submit" name="submit" value="Update">
+
+																						
+
+											
+											<br><br>
+											
+											
+
+
+
+											<br><br>
+											<hr>
+											
+										</td>
+										<td width="300" align="center" valign="top">
+											<img src="img/facebook.jpg" width="60%" >
+											<!--<img src=<?php echo $image ?> alt="" width="150" height="200">-->
+											<br>
+											<br>
+											<button><a href="student_change_profilePic.html">Change</a></button>
+										</td>
+									</tr>
+								</table>
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+
+			</form>
+		</tr>
+		<tr align="right">
+				<td colspan="2">
+					<h5 align="center">
+						<font color="white">
+							<!--<input type="search" id="mySearch" name="mysearch">
+    						<button>Search</button>
+    					-->
+						</font>
+					</h5>
+				</td>
+			</tr>
+	</table>
+</body>
+</html>
+
+
+
