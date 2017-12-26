@@ -38,7 +38,7 @@
 				<br><br>
 				<ul>
 						<li type="square">
-						<a href="A_editProfile.html"><font color="teal" size="4em" />Edit Profile</a>
+						<a href="studentDashboard.php"><font color="teal" size="4em" />Edit Profile</a>
 					</li>
 					<hr>
 					<li type="square"><a href="changepp.php"><font color="teal" size="4em" />Change Profile Picture</a></li><hr>
@@ -63,41 +63,54 @@
 								<table>
 									<tr>
 										<td width="500">
-											<span><font color="teal" size="3em" />Name</span>
-											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp
-											<font color="white"/>Tamim
+											<span><font color="white" size="3em" />Name</span>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbspTamim<?php echo $name?>
 											<br><br>
 											<hr>
 											<br><br>
-											<span><font color="teal" size="3em" />Email</span>
-											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp
-											<font color="white"/>tam@gmail.com
+											<span><font color="white" size="3em" />Email</span>
+											&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsptam@gmail.com<?php echo $email ?>
 											<br><br>
 											<hr>
-											<h3><font color="teal" size="3em">
+											<h3><font color="white" size="3em">
 												GENDER
-												&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<font color="white"/>&nbsp&nbsp&nbsp
-												Male<br>
+												&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:
 											</font></h3>
-												
-												  
+												<form action="">
+												  <input type="radio" name="gender" value="male">
+												  <font color="teal"/>Male<br>
+												  <input type="radio" name="gender" value="female"> 
+												  <font color="teal"/>Female<br>
+												  <input type="radio" name="gender" value="other"> 
+												  <font color="teal"/>Other
+												</form>
 											<hr>
 											<br><br>
 
-											<span><font color="teal" size="3em" />Date Of Birth  </span>&nbsp&nbsp&nbsp&nbsp&nbsp:
-											<font color="white"/>&nbsp&nbsp&nbsp
-											25-11-1995
-
-											<?php echo $dob ?>
-											
+											<span><font color="white" size="3em" />Date Of Birth  </span>&nbsp&nbsp&nbsp&nbsp&nbsp: <?php echo $dob ?>
+											<input type="text" name="day" placeholder="Day" size="7"> /
+											<input type="text" name="month" placeholder="Month" size="7"> /
+											<input type="text" name="year" placeholder="Year" size="7">
 											<br><br>
-											<font color="teal" size="3em">Expert In:<br><br>
-							<button><font color="red" size="3em"/>HTML</button>
-							<button><font color="#468A78" size="3em"/>C/C++</button>
-							<button><font color="#FFC300  " size="3em"/>JAVASCRIPT</button>
-							<button><font color="#FF5733  " size="3em"/>AJAX</button>
-							<button><font color="#900C3F" size="3em"/>PHP</button>
-					<hr>
+											<hr>
+											<br><br>
+											
+											<span><font color="white" size="3em" />Expertise</span>
+											<br><br><br>
+											<form action="" method="get">
+											  <input type="checkbox" name="HTML" value="HTML">
+											  <font color="red" size="3em"/>HTML
+											  <input type="checkbox" name="C/C++" value="C/C++">
+											  <font color="#468A78" size="3em"/>C/C++
+											  <input type="checkbox" name="JAVASCRIPT" value="JAVASCRIPT">
+											  <font color="#FFC300  " size="3em"/>JAVASCRIPT
+											  <input type="checkbox" name="AJAX" value="AJAX">
+											  <font color="#FF5733  " size="3em"/>AJAX
+											  <input type="checkbox" name="PHP" value="PHP">
+											  <font color="#900C3F" size="3em"/>PHP
+											  <br><br>
+											  <input type="submit" value="Submit">
+											</form>
 
 
 
