@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Admin Profile</title>
+	<title>User Info</title>
 </head>
 <body>
 	<table border="1" align="center" width="100%" height="100%" cellspacing="0" bgcolor="#0F1F3A">
@@ -18,8 +18,8 @@
 					<nav align="right">
 
 						<button type="button" onclick="location.href='A_home.html'"><font color="red" size="4em" /><b/>Home</button>
-						<button type="button" onclick="location.href='A_profile.html'"><font color="red" size="4em" /><b/>Profile</button>
-						<button type="button" onclick="location.href='A_userinfo.html'"><font color="red" size="4em" /><b/>User Info</button><!-- Changes will apply here -->
+						<button type="button" onclick="location.href='A_S_profile.html'"><font color="red" size="4em" /><b/>Profile</button>
+						<button type="button" onclick="location.href='A_userinfo'"><font color="red" size="4em" /><b/>User Info</button><!-- Changes will apply here -->
 						<button type="button" onclick="location.href='homepage.html'"><font color="red" size="4em" /><b/>Log Out</button><!-- Changes will apply here -->
 					
 					</nav>
@@ -33,14 +33,15 @@
 					<legend>
 				<font size="5em" color="#F78541">
 					
-				<b/> ADMIN PROFILE
+				<b/> Student PROFILE
 				</font></legend>
 				<br><br>
 				<ul>
-					<hr>
 					
-					<li type="square"><a href="A_viewadmin.html"><font color="teal" size="4em" />View Admin</a></li><hr>
-					<li type="square"><a href="A_addadmin.html"><font color="teal" size="4em" />Add Admin</a></li><hr>
+					
+					<li type="square"><a href="A_viewStudent.html"><font color="teal" size="4em" /> View Student</a></li><hr>
+					<li type="square"><a href="A_view_org.html"><font color="teal" size="4em" /> View Organization</a></li><hr>
+					
 
 					<br><br>
 					
@@ -54,37 +55,43 @@
 							<fieldset>
 					<legend>
 						<h2><font color="teal"/>
-							ADD Admin
+							Shamim
 						</h2>
 					</legend>
 
 
 								<table>
 									<tr>
-										<td width="800" align="center">
-											<form action="">
-												<br><br><br>
-												<h1><font color="#F78541" size="25em">Create ADMIN</font></h1>
-											  <font color="#CDCDCD  " size="5em">First name:</font><br>
-											  <input type="text" name="firstname" value="">
-											  <br>
-											  <font color="#CDCDCD" size="5em">Last name:</font><br>
-											  <input type="text" name="lastname" value="">
-											  <br>
-											  <font color="#CDCDCD" size="5em">E-Mail:</font><br>
-											  <input type="text" name="email" value="">
-											  <br>
-											  <font color="#CDCDCD" size="5em">Password:</font><br>
-											  <input type="text" name="Password" value="">
-											  <br>
-											  <font color="#CDCDCD" size="5em">Confirm Password:</font><br>
-											  <input type="text" name="CPassword" value="">
-											  <br><br>
-											 
-											  <button><font color="#F78541">CREATE</font></button>
-											  <br><br><br><br><br><br><br><br><br><br><br>
-								</form> 
+										<td width="800">
+											
+											<font color="white" size="4em">Welcome to the 
+									<font color="yellow" size="4em"/>CAMPUS 
+									<font color="red" size="4em"/>RECRUITMENT 
+									<font color="teal" size="4em"/>SYSTEM
+										<a href="loggedin.php"><?php echo $_SESSION['username'] ?></a></font>
+										<br><br><br>
+									<font color="white">
+										<h1>
+											<font color="red">CLICK</font> view 
+											<font color="yellow">TYPE</font> to see 
+											<font color="teal">USER</font> Informations
+										</h1>
+										<a href="loggedin.php"><?php echo $_SESSION['username'] ?></a></font>
+										<br><br><br>
+									<font color="white">Expert In: 
+										<a href="loggedin.php"><?php echo $_SESSION['username'] ?></a></font>
+										<button><font color="red" size="3em"/>HTML</button>
+											<button><font color="#468A78" size="3em"/>C/C++</button>
+											<button><font color="#FFC300  " size="3em"/>JAVASCRIPT</button>
+											<button><font color="#FF5733  " size="3em"/>AJAX</button>
+											<button><font color="#900C3F" size="3em"/>PHP</button>
 										</td>
+										
+										
+										
+										
+										
+										
 									</tr>
 								</table>
 							</fieldset>
