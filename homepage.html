@@ -5,7 +5,6 @@
 	<title>HomePAGE</title>
 </head>
 <body>
-	
 		<table border="1" align="center" width="100%" cellspacing="0" bgcolor="#0F1F3A">
 			<tr>
 				<td><br>
@@ -13,11 +12,20 @@
 					<br>
 				
 					<h5 align="right">
-						<font color="white" size="4m">Username:</font>&nbsp;&nbsp;&nbsp;
-						<input type="text" name="loginusername">
-						<font color="white" size="4m">Password:</font>&nbsp;&nbsp;&nbsp;
-						<input type="Password" name="Password">&nbsp;&nbsp;&nbsp;
-						<input type="submit" name="login" value="LOG IN" align="right" onclick="location.href='loginPage.html'">
+						<form action="php/authorizationCheck.php" method="POST">
+						<font color="white" size="4m">Username:</font>
+						<input type="text" name="loginusername">&nbsp;&nbsp;&nbsp;
+						<font color="white" size="4m">Password:</font>
+						<input type="Password" name="loginPassword">&nbsp;&nbsp;&nbsp;
+						  	<select name="userType">
+						  		<font color="#F78541" /><option value="default" selected disabled >Choose User Type</option>
+						  		<font color="#F78541" /><option value="admin">ADMIN</option>
+							  	<font color="#F78541" /><option value="person">STUDENT</option>
+							  	<font color="#F78541" /><option value="organization">ORGANIZATION</option>
+							  
+							</select>&nbsp;&nbsp;&nbsp;
+						<input type="submit" name="login" value="LOG IN" align="right" onclick="location.href='php/authorizationCheck.php'">
+					</form>
 					</h5>
 					
 				</td>
